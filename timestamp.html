@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>实时时间戳</title>
+</head>
+<body>
+    <h1>当前Unix时间戳（毫秒）：<span id="timestamp"></span></h1>
+    <script>
+        function updateTimestamp() {
+            document.getElementById('timestamp').textContent = Date.now(); // 获取当前毫秒级时间戳并显示
+        }
+        updateTimestamp(); // 页面加载时立即显示一次
+        setInterval(updateTimestamp, 1000); // 每隔1秒（1000毫秒）更新一次
+    </script>
+</body>
+</html>
